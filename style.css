@@ -1,0 +1,462 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.coronaAlert {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  text-align: center;
+
+  p {
+    font-size: 13px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 15px;
+    }
+  }
+
+  a {
+    color: #721c24;
+  }
+}
+
+.header {
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 25px;
+      margin-left: 10px;
+      color: #811e33;
+      font-weight: 600;
+
+      @media screen and (min-width: 768px) {
+        font-size: 30px;
+      }
+    }
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .nav {
+    background-color: #811e33;
+    padding: 10px;
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      list-style: none;
+      padding-right: 20px;
+
+      font-size: 14px;
+      max-width: 1200px;
+      margin: auto;
+      @media screen and (min-width: 768px) {
+        font-size: 15px;
+      }
+
+      li {
+        margin: 0 10px;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: 600;
+          transition: all 200ms;
+
+          &:hover {
+            color: #f8d7da;
+          }
+        }
+      }
+    }
+  }
+  .address {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+
+    font-size: 14px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+
+    p {
+      span {
+        color: #811e33;
+        text-decoration: underline;
+      }
+      &:last-child {
+        align-self: flex-start;
+
+        @media screen and (min-width: 768px) {
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  .hero-content {
+    position: relative;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    gap: 10px;
+    padding: 100px 20px;
+    color: white;
+
+    img {
+      width: 100%;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -2;
+      height: 100%;
+      object-fit: cover;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(3px);
+    }
+    .text {
+      text-align: center;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      h1 {
+        font-size: 20px;
+
+        @media screen and (min-width: 768px) {
+          font-size: 30px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        max-width: 600px;
+        @media screen and (min-width: 768px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.features {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #811e33;
+  color: white;
+  gap: 15px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  .feature {
+    display: flex;
+
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      max-width: 300px;
+    }
+    gap: 10px;
+    .feature-img {
+      display: flex;
+      align-items: center;
+
+      gap: 10px;
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
+.aboutUs {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 30px;
+  gap: 50px;
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0;
+  }
+
+  .aboutUs-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    p {
+      font-size: 14px;
+      line-height: 18px;
+      @media screen and (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+
+    h3 {
+      color: #811e33;
+      font-size: 20px;
+    }
+    order: 2;
+
+    @media screen and (min-width: 1024px) {
+      grid-column-start: 7;
+      grid-column-end: 12;
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+    order: 1;
+
+    @media screen and (min-width: 1024px) {
+      grid-column-start: 1;
+      grid-column-end: 6;
+    }
+  }
+}
+.seeOurProducts {
+  position: relative;
+
+  background: url(/public/hal-gatewood-nhG5gix93es-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 30px;
+  margin-top: 50px;
+  img {
+    order: 0;
+    z-index: 3;
+  }
+
+  .seeOurProducts-content {
+    order: 1;
+    z-index: 3;
+    color: rgba(255, 255, 255, 0.925);
+
+    h2 {
+      font-size: 40px;
+      font-weight: 400;
+    }
+
+    h4 {
+      font-size: 20px;
+
+      span {
+        color: rgb(226, 4, 4);
+      }
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+  }
+}
+
+.contactUs {
+  padding: 100px 50px;
+  .contactUs-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    h2 {
+      color: #811e33;
+      font-size: 30px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 18px;
+      @media screen and (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+
+    .contactUs-form {
+      width: 100%;
+      max-width: 700px;
+
+      display: flex;
+      flex-direction: column;
+
+      gap: 15px;
+      .form-group {
+        display: flex;
+        flex-direction: column;
+
+        input,
+        textarea {
+          padding: 10px;
+          border: none;
+          outline: none;
+
+          border: 1px solid #811e33;
+          border-radius: 5px;
+          font-size: 14px;
+          @media screen and (min-width: 768px) {
+            font-size: 16px;
+          }
+        }
+
+        label {
+          color: #811e33;
+        }
+
+        button {
+          background-color: #811e33;
+          color: white;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+
+          transition: all 100ms;
+          &:hover {
+            background-color: #f8d7da;
+            color: #811e33;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 30px;
+  max-width: 1300px;
+  margin: auto;
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+
+      h1 {
+        font-size: 25px;
+        white-space: nowrap;
+        color: #811e33;
+        font-weight: 600;
+
+        @media screen and (min-width: 768px) {
+          font-size: 30px;
+        }
+      }
+
+      img {
+        width: 50px;
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      ul {
+        display: flex;
+
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+        li {
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+
+            &:hover {
+              color: #811e33;
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        li {
+          color: black;
+          font-size: 14px;
+          @media screen and (min-width: 768px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+.copyright {
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  background-color: #811e33;
+}

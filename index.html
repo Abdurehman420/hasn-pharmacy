@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hassan Medicose</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="coronaAlert">
+        <p>
+          Stay informed on the latest COVID-19 updates . <a href="https://www.bbc.com/news/coronavirus"> Click here</a>
+        </p>
+      </div>
+      <header class="header">
+        <div class="logo">
+          <h1>HASSAN MEDICINE</h1>
+          <img src="/public/IMG_0180.WEBP" alt="logo" />
+        </div>
+        <nav class="nav">
+          <ul>
+            
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact  </a></li>
+          </ul>
+        </nav>
+        <address class="address">
+          <p>
+            <span>HASSAN MEDICINE STORE, Basharat Market, Phase 3, Hayatabad, Peshawar, Pakistan</span> | Call us at +92
+            313 980 1222 , 091- 5830981
+          </p>
+          <p>Pharmacy Hours Mon-Sun: 9:00 AM - 12:00 PM</p>
+        </address>
+      </header>
+      <main class="main">
+        <section class="hero">
+          <div class="hero-content">
+            <div class="overlay"></div>
+            <img src="/public/3.jpg" alt="" />
+            <div class="text">
+              <h1>Your Local Neighborhood Pharmacy</h1>
+              <p>
+                We are a family owned pharmacy that has been in business for over 20 years. we provide a complete range
+                of pharmaceutical, herbal, and surgical products.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="features" id="features">
+          <div class="feature">
+            <div class="feature-img">
+              <img src="/public/thumbs-up-solid.svg" alt="feature" />
+              <h3>100% PRODUCT AVAILABILITY</h3>
+            </div>
+
+            <p>We ensure the availability all types of consumer, healthcare, child care & surgical products</p>
+          </div>
+          <div class="feature">
+            <div class="feature-img">
+              <img src="/public/trophy-solid.svg" alt="feature" />
+              <h3>100% GENUINE QUALITY</h3>
+            </div>
+
+            <p>Hassan Medicine provides 100% Quality Guaranteed to our customers.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-img">
+              <img src="/public/truck-solid.svg" alt="feature" />
+              <h3>HOME DELIVERY</h3>
+            </div>
+
+            <p>We offer a home delivery service for your convenience and easy access to quality medicine.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-img">
+              <img src="/public/user-plus-solid.svg" alt="feature" />
+              <h3>FREE PHARMACY CONSULTANCY</h3>
+            </div>
+
+            <p>Hassan Medicine provides 100% Quality Guaranteed to our customers.</p>
+          </div>
+        </section>
+        <section class="aboutUs" id="about">
+          <div class="aboutUs-content">
+            <h2>ABOUT US</h2>
+            <p>
+              Hassan Medicine offers comprehensive retail services to the public. Our diverse range includes
+              pharmaceuticals, nutraceuticals, cosmetics, and toiletries. Additionally, we provide essential community
+              pharmacy services, offering over-the-counter medications, patient education, counseling, and first aid
+              through a team of qualified and experienced professionals, including pharmacists, pharmacy technicians,
+              and health technicians.
+            </p>
+            <p>
+              Hassan Medicine is dedicated to supporting the professional growth of fresh pharmacy graduates and
+              business administration graduates by providing internship and training opportunities in the retail and
+              community pharmacy sectors.
+            </p>
+            <p>
+              Our mission is to deliver a complete range of pharmaceutical, herbal, nutraceutical, surgical, and
+              cosmetic products at reasonable rates, ensuring high quality and authenticity.
+            </p>
+
+            <h3>Mr. Hassan – CEO HASSAN MEDICINE</h3>
+          </div>
+          <img src="./public/WhatsApp Image 2024-11-04 at 12.36.43_a802b704.jpg" alt="" />
+        </section>
+        <section class="aboutUs seeOurProducts">
+          <div class="overlay"></div>
+          <div class="aboutUs-content seeOurProducts-content">
+            <h2>See Our Products</h2>
+            <h4>
+              Our pharmacy takes pride in offering a wide range of high-quality,
+              <span> imported pharmaceutical products.</span>
+            </h4>
+            <p>
+              "We aim to establish ourselves as the leading retail and community pharmacy in Pakistan, with a particular
+              focus on Khyber Pakhtunkhwa, delivering exceptional pharmacy care services to the public. Our commitment
+              is to provide high-quality, cost-effective products while actively contributing to public health.
+            </p>
+            <p>
+              <strong
+                >By sourcing internationally, we bring trusted brands and specialized medications from around the globe
+                to ensure our customers have access to the best in healthcare.
+              </strong>
+              Each product undergoes rigorous quality checks and complies with international standards to guarantee
+              safety and efficacy. This commitment to importing top-tier products reflects our dedication to meeting
+              diverse health needs and providing a dependable service for our community.
+            </p>
+          </div>
+          <img src="./public/Medicine_Boxes_2.jpg" alt="" />
+        </section>
+        <section class="contactUs" id="contact">
+          <div class="contactUs-content">
+            <h2>Contact Us</h2>
+            <form class="contactUs-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"  required/>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" required cols="20" rows="5"></textarea>
+              </div>
+              <div class="form-group">
+                <button onclick="sendEmail()">Send</button>
+              </div>
+            </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-content">
+         <div class="logo">
+          <h1>HASSAN MEDICINE</h1>
+          <img src="/public/IMG_0180.WEBP" alt="logo" />
+         </div>
+          <div class="links">
+            <h4>Quick Links</h4>
+            <ul>
+              
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#features">features</a></li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h4>Contact us</h4>
+            <ul>
+              <li>Address: <span>HASSAN MEDICINE STORE, Basharat Market, Phase 3, Hayatabad, Peshawar, Pakistan</span></li>
+              <li>Phone: <a href="tel:+923139801222">+92 313 980 1222</a></li>
+              <li>WhatsApp: <a href="tel:+923139801222">+92 313 980 1222</a></li>
+              <li>Email:<a href="mailto:zKXp5@example.com">zKXp5@example.com</a></li>
+            </ul>
+
+          </div>
+          
+        </div>
+      </footer>
+      <p class="copyright">
+        © 2023 Hassan Medicine. All rights reserved.  
+        Designed and Developed by: Abdur Rahman  
+      </p>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="./script.js"> </script>
+
+       
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "fI6I_DaVqEDarkILM",
+        });
+      })();
+    </script>
+  </body>
+</html>
